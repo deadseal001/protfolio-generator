@@ -1,10 +1,7 @@
 const inquirer = require('inquirer');
-const generatePage=require('./src/page-template.js');
-const {writeFile, copyFile}=require('./utils/generate-site.js')
+const generatePage = require('./src/page-template.js');
+const { writeFile, copyFile } = require('./utils/generate-site');
 
-// const pageHTML=generatePage(name,github);
-// const profileDataArgs = process.argv.slice(2);
-// const [name, github] = profileDataArgs;
 const promptUser = () => {
     return inquirer.prompt([
       {
